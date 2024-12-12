@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trishaa's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-pink: #9d87e6;
+            --dark-bg: #121212;
+        }
+
+        body {
+            @font-face {
+                font-family: myfont;
+                src: url(bad.otf);
+            }
+            background-color: var(--dark-bg);
+            color: white;
+        }
+        #about {
+            background-image: url('blah.mp4');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        #about video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+    
+        
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh; /* Change the height to 70vh */
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-section, footer {
+    position: relative;
+    overflow: hidden;
+    height: 100vh; /* Add a height property to the .hero-section and footer */
+}
+       
+
+       .hero-section h1, .hero-section h2 {
+           display: inline-block;
+           padding: 10px 20px;
+           border-radius: 8px;
+           margin: 80px auto 0 auto; /* Update the margin property to center the text */
+           text-align: center;
+       } 
+
+        .pink-section {
+            background-color: var(--primary-pink);
+            color: var(--dark-bg);
+        }
+
+        .project-card {
+            background: rgba(255, 153, 204, 0.1);
+            border: 1px solid var(--primary-pink);
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .skill-bar {
+            height: 25px;
+            background: var(--primary-pink);
+            margin-bottom: 10px;
+        }
+
+        .navbar {
+            background-color: rgba(18, 18, 18, 0.9) !important;
+        }
+
+        .nav-link {
+            color: white !important;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-pink) !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section" up>
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="blah.mp4" type="video/mp4">
+           
+        </video>
+        <div class="container text-center text-white position-relative" style="margin:0 auto">
+            <h1 class="display-1 mb-4" style="font-family: fantasy;">Graphic design portfolio</h1>
+            
+            <p class="lead">trishaa bhattacharyya</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="pink-section py-5" style="background-image: url('video.mp4'); background-size: cover; background-position: center;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="display-4 mb-4">ABOUT ME</h2>
+                    <p class="lead">I am a second-year Communication Design student passionate about visual storytelling, branding, and digital media. I specialize in creating meaningful, user-centric designs that resonate with audiences.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://i.pinimg.com/736x/17/ea/f9/17eaf9abb79d8567e0461892f7d3a677.jpg" alt="trishaa" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="blah.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="blah.mp4" type="video/mp4">
+        </video>
+        <div class="container">
+           
+            <h2 class="text-center mb-5">PROJECTS</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <a href="project1.html" class="btn btn-outline-pink w-100 project-card p-3 rounded">
+                        <img src="gah.png" alt="Project 1" class="img-fluid mb-3">
+                        <h3>1st year</h3>
+                        <p>Some of my best works from my 1st year</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="project2.html" class="btn btn-outline-pink w-100 project-card p-3 rounded">
+                        <img src="lah.png" alt="Project 2" class="img-fluid mb-3">
+                        <h3>Internship</h3>
+                        <p>My projects from when I worked for some companies</p>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="project3.html" class="btn btn-outline-pink w-100 project-card p-3 rounded">
+                        <img src="ahhh.jpeg" alt="Project 3" class="img-fluid mb-3">
+                        <h3>Over all</h3>
+                        <p>All my works</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="pink-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">VISUAL SKILLS</h2>
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Photoshop</span>
+                            <span>85%</span>
+                        </div>
+                        <div class="skill-bar" style="width: 85%"></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Illustrator</span>
+                            <span>75%</span>
+                        </div>
+                        <div class="skill-bar" style="width: 75%"></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Indesign</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar" style="width: 60%"></div>
+                    </div>
+                    <div class="skill-item mb-4">
+                        <div class="d-flex justify-content-between mb-1">
+                            <span>Premier Pro</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="skill-bar" style="width: 30%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <video class="bg-video" autoplay muted loop playsinline>
+            <source src="blah.mp4" type="video/mp4">           
+        </video>
+        <div class="container text-white position-relative">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
